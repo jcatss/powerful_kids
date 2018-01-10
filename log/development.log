@@ -2005,3 +2005,164 @@ Processing by StaticsController#index as HTML
 Completed 200 OK in 104ms (Views: 102.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 18:42:54 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (30.3ms)
+  Rendered statics/index.html.haml within layouts/application (40.6ms)
+Completed 200 OK in 646ms (Views: 630.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 18:43:35 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (10.5ms)
+  Rendered statics/index.html.haml within layouts/application (13.7ms)
+Completed 200 OK in 112ms (Views: 110.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 18:45:53 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (10.7ms)
+  Rendered statics/index.html.haml within layouts/application (14.0ms)
+Completed 200 OK in 109ms (Views: 107.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 18:52:17 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (7.5ms)
+  Rendered statics/index.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 85ms (Views: 83.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 18:52:49 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (10.4ms)
+  Rendered statics/index.html.haml within layouts/application (13.5ms)
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/__footer with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/home/max/projects/powerful_kids/app/views"
+  * "/var/lib/gems/2.3.0/gems/foundation-rails-6.3.1.0/app/views"
+):
+    12:   <body>
+    13: 
+    14:     <%= yield %>
+    15:     <%= render "layouts/_footer"%>
+    16: 
+    17: 
+    18:   </body>
+  
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___371643412450193991_70243343966340'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.1ms)
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 18:53:19 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (10.5ms)
+  Rendered statics/index.html.haml within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 132ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/__footer.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/home/max/projects/powerful_kids/app/views"
+  * "/var/lib/gems/2.3.0/gems/foundation-rails-6.3.1.0/app/views"
+):
+    12:   <body>
+    13: 
+    14:     <%= yield %>
+    15:     <%= render "layouts/_footer.html.erb"%>
+    16: 
+    17: 
+    18:   </body>
+  
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___371643412450193991_70243117274780'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.2ms)
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 18:54:01 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (11.6ms)
+  Rendered statics/index.html.haml within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/__footer.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/home/max/projects/powerful_kids/app/views"
+  * "/var/lib/gems/2.3.0/gems/foundation-rails-6.3.1.0/app/views"
+):
+    12:   <body>
+    13: 
+    14:     <%= yield %>
+    15:     <%= render 'layouts/_footer.html.erb' %>
+    16: 
+    17: 
+    18:   </body>
+  
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___371643412450193991_23282520'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.7ms)
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 18:54:43 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (10.7ms)
+  Rendered statics/index.html.haml within layouts/application (13.8ms)
+Completed 500 Internal Server Error in 138ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial app/views/layouts/__footer.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/home/max/projects/powerful_kids/app/views"
+  * "/var/lib/gems/2.3.0/gems/foundation-rails-6.3.1.0/app/views"
+):
+    12:   <body>
+    13: 
+    14:     <%= yield %>
+    15:     <%= render 'app/views/layouts/_footer.html.erb' %>
+    16: 
+    17: 
+    18:   </body>
+  
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___371643412450193991_70243350926820'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.1ms)
