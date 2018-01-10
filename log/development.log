@@ -1,0 +1,2007 @@
+Started GET "/" for 127.0.0.1 at 2018-01-10 02:27:03 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.0.6/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 14ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:28:23 +0200
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.6) lib/active_record/migration.rb:573:in `check_pending!'
+activerecord (5.0.6) lib/active_record/migration.rb:549:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.6) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.6) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.6) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.6) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.4ms)
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:29:34 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (29.6ms)
+Completed 500 Internal Server Error in 5952ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Undefined mixin 'motion-ui-transitions'.):
+    4:     <title>MyTest</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9: 
+   10:     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+app/assets/stylesheets/foundation_and_overrides.scss:55:in `motion-ui-transitions'
+app/assets/stylesheets/foundation_and_overrides.scss:55
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___4172909247894182580_37506180'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.2ms)
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:30:13 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 5534ms (Views: 5532.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:30:23 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 90ms (Views: 88.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:30:24 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 102ms (Views: 101.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:30:25 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 94ms (Views: 93.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:30:26 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 112ms (Views: 110.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:30:44 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (10.9ms)
+Completed 200 OK in 106ms (Views: 104.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:30:45 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 99ms (Views: 97.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:30:46 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 101ms (Views: 99.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics/new" for 127.0.0.1 at 2018-01-10 02:30:49 +0200
+Processing by StaticsController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'statics'):
+  
+app/controllers/statics_controller.rb:17:in `new'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.8ms)
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:30:50 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 79ms (Views: 78.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:31:08 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 106ms (Views: 104.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:32:04 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 106ms (Views: 104.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:32:05 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 94ms (Views: 92.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:32:06 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 89ms (Views: 87.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:37:18 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 110ms (Views: 108.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:37:19 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (9.8ms)
+Completed 200 OK in 100ms (Views: 98.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:37:32 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 204ms (Views: 202.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:37:34 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 101ms (Views: 98.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:37:35 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 117ms (Views: 116.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:37:35 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 100ms (Views: 98.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:37:47 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 107ms (Views: 105.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:37:49 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:37:50 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 54ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:37:50 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:37:50 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:37:51 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:38:02 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (10.9ms)
+Completed 200 OK in 271ms (Views: 269.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:38:06 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 91ms (Views: 89.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:38:09 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 94ms (Views: 91.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:38:10 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 88ms (Views: 87.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:38:13 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 92ms (Views: 90.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:38:15 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 99ms (Views: 97.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:38:16 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 94ms (Views: 92.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:38:22 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 97ms (Views: 96.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:39:19 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 181ms (Views: 179.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:39:23 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 106ms (Views: 104.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:39:26 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 90ms (Views: 88.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:39:27 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 97ms (Views: 95.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:39:28 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 99ms (Views: 97.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:39:28 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 103ms (Views: 102.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:39:43 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 98ms (Views: 96.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:39:43 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 93ms (Views: 91.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:39:44 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 87ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:39:44 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 92ms (Views: 90.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:39:53 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 103ms (Views: 100.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:40:07 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 108ms (Views: 107.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:40:09 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 59ms (Views: 57.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:40:25 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 61ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:40:30 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (10.3ms)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:41:18 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:41:25 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 50ms (Views: 48.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:43:00 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (12.8ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/vendor/modernizr.js" for 127.0.0.1 at 2018-01-10 02:43:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/javascripts/vendor/modernizr.js"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [8 times] (2.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.7ms)
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:45:08 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 2463ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Undefined mixin 'foundation-xy-grid-classes'.):
+     5:     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     6:     <%= csrf_meta_tags %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/foundation_and_overrides.scss:13:in `foundation-xy-grid-classes'
+app/assets/stylesheets/foundation_and_overrides.scss:13
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__4178323304265849839_30057620'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.9ms)
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 02:46:01 +0200
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 27802ms (Views: 27800.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 10:13:51 +0200
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.6) lib/active_record/migration.rb:573:in `check_pending!'
+activerecord (5.0.6) lib/active_record/migration.rb:549:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.6) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.6) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.6) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.6) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (43.2ms)
+  [1m[35m (72.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (86.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateHomes (20180109224001)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "homes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "info" text, "image" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180109224001"]]
+  [1m[35m (61.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-01-10 08:14:05.413326"], ["updated_at", "2018-01-10 08:14:05.413326"]]
+  [1m[35m (41.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 10:14:20 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticsController#index as HTML
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (21.7ms)
+Completed 200 OK in 1320ms (Views: 1280.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 10:23:49 +0200
+Processing by StaticsController#index as HTML
+  [1m[36mStatic Load (0.5ms)[0m  [1m[34mSELECT "statics".* FROM "statics"[0m
+  [1m[36mStatic Load (0.3ms)[0m  [1m[34mSELECT "statics".* FROM "statics"[0m
+Completed 500 Internal Server Error in 147ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mStatic Load (0.2ms)[0m  [1m[34mSELECT "statics".* FROM "statics"[0m
+NameError (undefined local variable or method `static_params' for #<StaticsController:0x007fe868254d58>
+Did you mean?  static_path):
+  
+app/controllers/statics_controller.rb:8:in `index'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  [1m[36mStatic Load (0.2ms)[0m  [1m[34mSELECT "statics".* FROM "statics"[0m
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.0ms)
+Started GET "/statics" for 127.0.0.1 at 2018-01-10 10:24:09 +0200
+Processing by StaticsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"statics"} missing required keys: [:id]):
+  
+app/controllers/statics_controller.rb:8:in `index'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 11:11:13 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.6) lib/active_record/migration.rb:573:in `check_pending!'
+activerecord (5.0.6) lib/active_record/migration.rb:549:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.6) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.6) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.6) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.6) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePhotos (20180110084158)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (14.7ms)[0m  [1m[35mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "picture" text, "describtion" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180110084158"]]
+  [1m[35m (69.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateVideos (20180110084229)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "videos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "video" text, "describtion" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180110084229"]]
+  [1m[35m (81.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 11:11:38 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticsController#index as HTML
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 11:11:48 +0200
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial statics/_about_us with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/home/max/projects/powerful_kids/app/views"
+  * "/var/lib/gems/2.3.0/gems/foundation-rails-6.3.1.0/app/views"
+):
+    1: = render "statics/#{@page}"
+  
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200368536560'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.3ms)
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/index.html.haml within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial statics/_about_us with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/home/max/projects/powerful_kids/app/views"
+  * "/var/lib/gems/2.3.0/gems/foundation-rails-6.3.1.0/app/views"
+):
+    1: = render "statics/#{@page}"
+  
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200368536560'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.7ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 11:12:24 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (1.8ms)
+  Rendered statics/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 381ms (Views: 379.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 11:21:05 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (1.7ms)
+  Rendered statics/index.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 107ms (Views: 105.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 12:20:36 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (1.9ms)
+  Rendered statics/index.html.haml within layouts/application (42.6ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h2 and nested within it.):
+    1: %div
+    2: 	%h2 Мы предлагаем:
+    3: 		%div{:data-closable => nil, :class => "callout alert-callout-border success"}
+    4:   			%strong Yay! - You accomplished a simple task!
+    5:     			%span{:aria-hidden => "true" &times}
+    6: 
+  
+app/views/statics/_about_us.html.haml:3
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200334710380'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.0ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 12:21:23 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (2.4ms)
+  Rendered statics/index.html.haml within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    1: %div
+    2: 	%h2 
+    3: 	Мы предлагаем:
+    4: 		%div{:data-closable => nil, :class => "callout alert-callout-border success"}
+    5:   			%strong Yay! - You accomplished a simple task!
+    6:     			%span{:aria-hidden => "true" &times}
+    7: 
+  
+app/views/statics/_about_us.html.haml:4
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200460748180'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.6ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 12:23:36 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (2.1ms)
+  Rendered statics/index.html.haml within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %strong and nested within it.):
+    2: 	%h2 Мы предлагаем:
+    3: 	%div{:data-closable => nil, :class => "callout alert-callout-border success"}
+    4: 		%strong Yay! - You accomplished a simple task!
+    5: 			%span{:aria-hidden => "true" &times}
+    6: 
+    7: 	%div{:data-closable => nil, :class => "callout alert-callout-border warning"}
+    8: 		%strong Caution - A word I don't understand.
+  
+app/views/statics/_about_us.html.haml:5
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200459218100'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.9ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 12:24:06 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (2.1ms)
+  Rendered statics/index.html.haml within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "\t " used for indentation, but the rest of the document was indented using 1 tab.):
+    1: %div
+    2: 	%h2 Мы предлагаем:
+    3: 	%div{:data-closable => nil, :class => "callout alert-callout-border success"}
+    4: 	 %strong Yay! - You accomplished a simple task!
+    5: 	   %span{:aria-hidden => "true" &times}
+    6: 
+    7: 	%div{:data-closable => nil, :class => "callout alert-callout-border warning"}
+  
+app/views/statics/_about_us.html.haml:4
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200473916940'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.9ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 12:24:27 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (2.3ms)
+  Rendered statics/index.html.haml within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "\t   " used for indentation, but the rest of the document was indented using 1 tab.):
+    1: %div
+    2: 	%h2 Мы предлагаем:
+    3: 	%div{:data-closable => nil, :class => "callout alert-callout-border success"}
+    4: 	   %strong Yay! - You accomplished a simple task!
+    5: 	     %span{:aria-hidden => "true" &times}
+    6: 
+    7: 	%div{:data-closable => nil, :class => "callout alert-callout-border warning"}
+  
+app/views/statics/_about_us.html.haml:4
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200507554700'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.0ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 12:28:12 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (2.4ms)
+  Rendered statics/index.html.haml within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "\t   " used for indentation, but the rest of the document was indented using 1 tab.):
+    1: %div
+    2: 	%h2 Мы предлагаем:
+    3: 	%div{:data-closable => nil, :class => "callout alert-callout-border success"}
+    4: 	   %strong Курс общей физической подготовки для улучшения здоровья
+    5: 	     %span{:aria-hidden => "true" &times}
+    6: 
+    7: 	%div{:data-closable => nil, :class => "callout alert-callout-border warning"}
+  
+app/views/statics/_about_us.html.haml:4
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200471658540'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.6ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 12:30:10 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (2.2ms)
+  Rendered statics/index.html.haml within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "\t   " used for indentation, but the rest of the document was indented using 1 tab.):
+    1: %div
+    2: 	%h2 Мы предлагаем:
+    3: 	%div{:data-closable => nil, :class => "callout alert-callout-border success"}
+    4: 	   %strong Курс общей физической подготовки для улучшения здоровья
+    5: 	     %span{:aria-hidden => "true" &times}
+    6: 
+    7: 	%div{:data-closable => nil, :class => "callout alert-callout-border warning"}
+  
+app/views/statics/_about_us.html.haml:4
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200464158920'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.7ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 12:30:31 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (2.2ms)
+  Rendered statics/index.html.haml within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "\t  " used for indentation, but the rest of the document was indented using 1 tab.):
+    1: %div
+    2: 	%h2 Мы предлагаем:
+    3: 	%div{:data-closable => nil, :class => "callout alert-callout-border success"}
+    4: 	  %strong Курс общей физической подготовки для улучшения здоровья
+    5: 	    %span{:aria-hidden => "true" &times}
+    6: 
+    7: 	%div{:data-closable => nil, :class => "callout alert-callout-border warning"}
+  
+app/views/statics/_about_us.html.haml:4
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200466019380'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.7ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:19:54 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (1.9ms)
+  Rendered statics/index.html.haml within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h2 and nested within it.):
+    1: %h2 Мы предлагаем:
+    2: 	%div{:data-closable => nil, :class => "callout alert-callout-border success"}
+    3: 	  %strong Курс общей физической подготовки для улучшения здоровья
+    4: 	    %span{:aria-hidden => "true" &times}
+    5: 
+  
+app/views/statics/_about_us.html.haml:2
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200506046620'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.1ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:20:59 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (2.0ms)
+  Rendered statics/index.html.haml within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Indentation can't use both tabs and spaces.):
+    1: %h2 Мы предлагаем:
+    2: %div{:data-closable => nil, :class => "callout alert-callout-border success"}
+    3: 	 %strong Курс общей физической подготовки для улучшения здоровья
+    4: 	   %span{:aria-hidden => "true" &times}
+    5: 
+    6: %div{:data-closable => nil, :class => "callout alert-callout-border warning"}
+  
+app/views/statics/_about_us.html.haml:3
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200469613720'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.9ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:21:44 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (1.7ms)
+  Rendered statics/index.html.haml within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "\t " used for indentation, but the rest of the document was indented using 1 tab.):
+    1: %h2 Мы предлагаем:
+    2: %div{:data-closable => nil, :class => "callout alert-callout-border success"}
+    3: 	%strong Курс общей физической подготовки для улучшения здоровья
+    4: 	 %span{:aria-hidden => "true" &times}
+    5: 
+    6: %div{:data-closable => nil, :class => "callout alert-callout-border warning"}
+    7: 	%strong Индивидуальный подход к каждому ребенку а так же индивидуальная программа тренировок
+  
+app/views/statics/_about_us.html.haml:4
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200469449380'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.9ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:22:17 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (2.6ms)
+  Rendered statics/index.html.haml within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 2 spaces used for indentation, but the rest of the document was indented using 1 tab.):
+     8: 	%span{:aria-hidden => "true" &times}
+     9: 
+    10: %div{:data-closable => nil, :class => "callout alert-callout-border warning"}
+    11:   %strong Тренировки по принципу "CrossFit"
+    12:   %br (Кроссфит – это круговая тренировка (то есть, упражнения постоянно повторяются, как бы замыкаясь в цепочку), которая заключается в выполнении определенного комплекса упражнений за минимальное время. Она имеет принципиальные отличия от обычных круговых тренировок, так как направленна на развитие сразу нескольких физических качеств, таких как сила, выносливость и ловкость. Тренировочную концепцию кроссфита можно назвать одной из лучших в развитии общей физической подготовки. Индивидуальный комплекс подбирается исходя из возможности спортсмена и оснащения зала.)
+    13:   %span{:aria-hidden => "true" &times}
+    14: 
+  
+app/views/statics/_about_us.html.haml:11
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200462406020'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.1ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:23:01 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (2.4ms)
+  Rendered statics/index.html.haml within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 2 spaces used for indentation, but the rest of the document was indented using 1 tab.):
+     8: 	%span{:aria-hidden => "true" &times}
+     9: 
+    10: %div{:data-closable => nil, :class => "callout alert-callout-border warning"}
+    11:   %strong Тренировки по принципу "CrossFit"
+    12:   %br (Кроссфит – это круговая тренировка (то есть, упражнения постоянно повторяются, как бы замыкаясь в цепочку), которая заключается в выполнении определенного комплекса упражнений за минимальное время. Она имеет принципиальные отличия от обычных круговых тренировок, так как направленна на развитие сразу нескольких физических качеств, таких как сила, выносливость и ловкость. Тренировочную концепцию кроссфита можно назвать одной из лучших в развитии общей физической подготовки. Индивидуальный комплекс подбирается исходя из возможности спортсмена и оснащения зала.)
+    13:   %span{:aria-hidden => "true" &times}
+    14: 
+  
+app/views/statics/_about_us.html.haml:11
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200473331040'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.9ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:25:31 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (1.8ms)
+  Rendered statics/index.html.haml within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 2 spaces used for indentation, but the rest of the document was indented using 1 tab.):
+     8: 	%span{:aria-hidden => "true" &times}
+     9: 
+    10: %div{:data-closable => nil, :class => "callout alert-callout-border warning"}
+    11:   %strong Тренировки по принципу "CrossFit"
+    12:   %br (Кроссфит – это круговая тренировка (то есть, упражнения постоянно повторяются, как бы замыкаясь в цепочку), которая заключается в выполнении определенного 
+    13:   //комплекса упражнений за минимальное время. Она имеет принципиальные отличия от обычных круговых тренировок, так как направленна на развитие сразу нескольких физических качеств, таких как сила, выносливость и ловкость. Тренировочную концепцию кроссфита можно назвать одной из лучших в развитии общей физической подготовки. Индивидуальный комплекс подбирается исходя из возможности спортсмена и оснащения зала.)
+    14:   %span{:aria-hidden => "true" &times}
+  
+app/views/statics/_about_us.html.haml:11
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200461626320'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.0ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:25:32 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (1.6ms)
+  Rendered statics/index.html.haml within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 2 spaces used for indentation, but the rest of the document was indented using 1 tab.):
+     8: 	%span{:aria-hidden => "true" &times}
+     9: 
+    10: %div{:data-closable => nil, :class => "callout alert-callout-border warning"}
+    11:   %strong Тренировки по принципу "CrossFit"
+    12:   %br (Кроссфит – это круговая тренировка (то есть, упражнения постоянно повторяются, как бы замыкаясь в цепочку), которая заключается в выполнении определенного 
+    13:   //комплекса упражнений за минимальное время. Она имеет принципиальные отличия от обычных круговых тренировок, так как направленна на развитие сразу нескольких физических качеств, таких как сила, выносливость и ловкость. Тренировочную концепцию кроссфита можно назвать одной из лучших в развитии общей физической подготовки. Индивидуальный комплекс подбирается исходя из возможности спортсмена и оснащения зала.)
+    14:   %span{:aria-hidden => "true" &times}
+  
+app/views/statics/_about_us.html.haml:11
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200465331140'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.9ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:25:49 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (2.4ms)
+  Rendered statics/index.html.haml within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 2 spaces used for indentation, but the rest of the document was indented using 1 tab.):
+     8: 	%span{:aria-hidden => "true" &times}
+     9: 
+    10: %div{:data-closable => nil, :class => "callout alert-callout-border warning"}
+    11:   %strong Тренировки по принципу "CrossFit"
+    12:   %br (Кроссфит – это круговая тренировка (то есть, упражнения постоянно повторяются, как бы замыкаясь в цепочку), которая заключается в выполнении определенного 
+    13:   //комплекса упражнений за минимальное время. Она имеет принципиальные отличия от обычных круговых тренировок, так как направленна на развитие сразу нескольких физических качеств, таких как сила, выносливость и ловкость. Тренировочную концепцию кроссфита можно назвать одной из лучших в развитии общей физической подготовки. Индивидуальный комплекс подбирается исходя из возможности спортсмена и оснащения зала.)
+    14:   %span{:aria-hidden => "true" &times}
+  
+app/views/statics/_about_us.html.haml:11
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200454779820'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.0ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:26:19 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (2.4ms)
+  Rendered statics/index.html.haml within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "\t  " used for indentation, but the rest of the document was indented using 1 tab.):
+    1: %h2 Мы предлагаем:
+    2: %div{:data-closable => nil, :class => "callout alert-callout-border success"}
+    3: 	%strong Курс общей физической подготовки для улучшения здоровья
+    4: 	  %span{:aria-hidden => "true" &times}
+    5: 
+    6: %div{:data-closable => nil, :class => "callout alert-callout-border warning"}
+    7: 	%strong Индивидуальный подход к каждому ребенку а так же индивидуальная программа тренировок
+  
+app/views/statics/_about_us.html.haml:4
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200474637900'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.0ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:26:36 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (2.3ms)
+  Rendered statics/index.html.haml within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "\t  " used for indentation, but the rest of the document was indented using 1 tab.):
+    1: %h2 Мы предлагаем:
+    2: %div{:data-closable => nil, :class => "callout alert-callout-border success"}
+    3: 	%strong Курс общей физической подготовки для улучшения здоровья
+    4: 	  %span{:aria-hidden => "true" &times}
+    5: 
+    6: %div{:data-closable => nil, :class => "callout alert-callout-border warning"}
+    7: 	%strong Индивидуальный подход к каждому ребенку а так же индивидуальная программа тренировок
+  
+app/views/statics/_about_us.html.haml:4
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_25935000'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.5ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:26:52 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (2.1ms)
+  Rendered statics/index.html.haml within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "\t  " used for indentation, but the rest of the document was indented using 1 tab.):
+    1: %h2 Мы предлагаем:
+    2: %div{:data-closable => nil, :class => "callout alert-callout-border success"}
+    3: 	%strong Курс общей физической подготовки для улучшения здоровья
+    4: 	  %span{:aria-hidden => "true" &times}
+    5: 
+    6: %div{:data-closable => nil, :class => "callout alert-callout-border warning"}
+    7: 	%strong Индивидуальный подход к каждому ребенку а так же индивидуальная программа тренировок
+  
+app/views/statics/_about_us.html.haml:4
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200473691380'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.0ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:27:03 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (2.1ms)
+  Rendered statics/index.html.haml within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "\t  " used for indentation, but the rest of the document was indented using 1 tab.):
+    1: %h2 Мы предлагаем:
+    2: %div{:data-closable => nil, :class => "callout alert-callout-border success"}
+    3: 	%strong Курс общей физической подготовки для улучшения здоровья
+    4: 	  %span{:aria-hidden => "true" &times}
+    5: 
+    6: %div{:data-closable => nil, :class => "callout alert-callout-border warning"}
+    7: 	%strong Индивидуальный подход к каждому ребенку а так же индивидуальная программа тренировок
+  
+app/views/statics/_about_us.html.haml:4
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200469553800'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.8ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:27:07 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (2.4ms)
+  Rendered statics/index.html.haml within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "\t " used for indentation, but the rest of the document was indented using 1 tab.):
+    1: %h2 Мы предлагаем:
+    2: %div{:data-closable => nil, :class => "callout alert-callout-border success"}
+    3: 	%strong Курс общей физической подготовки для улучшения здоровья
+    4: 	 %span{:aria-hidden => "true" &times}
+    5: 
+    6: %div{:data-closable => nil, :class => "callout alert-callout-border warning"}
+    7: 	%strong Индивидуальный подход к каждому ребенку а так же индивидуальная программа тренировок
+  
+app/views/statics/_about_us.html.haml:4
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200463240940'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.0ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:27:57 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (2.2ms)
+  Rendered statics/index.html.haml within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "\t  " used for indentation, but the rest of the document was indented using 1 tab.):
+     5: 
+     6: %div{:data-closable => nil, :class => "callout alert-callout-border warning"}
+     7: 	%strong Индивидуальный подход к каждому ребенку а так же индивидуальная программа тренировок
+     8: 	  %span{:aria-hidden => "true" &times}
+     9: 
+    10: %div{:data-closable => nil, :class => "callout alert-callout-border warning"}
+    11:   %strong Тренировки по принципу "CrossFit"
+  
+app/views/statics/_about_us.html.haml:8
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200372362280'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.4ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:29:46 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (7.2ms)
+  Rendered statics/index.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 155ms (Views: 153.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:30:15 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (5.7ms)
+  Rendered statics/index.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 92ms (Views: 90.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:30:55 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (4.1ms)
+  Rendered statics/index.html.haml within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/max/projects/powerful_kids/app/views/statics/_about_us.html.haml:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+...order success", :width => 300px)).to_s);; _hamlout.buffer <<...
+...                               ^
+/home/max/projects/powerful_kids/app/views/statics/_about_us.html.haml:18: syntax error, unexpected ')', expecting keyword_end
+...ccess", :width => 300px)).to_s);; _hamlout.buffer << (">\n<s...
+...                               ^):
+  
+app/views/statics/_about_us.html.haml:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/statics/_about_us.html.haml:18: syntax error, unexpected ')', expecting keyword_end
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200456099100'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.3ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:31:26 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (6.7ms)
+  Rendered statics/index.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 104ms (Views: 102.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:31:45 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (6.7ms)
+  Rendered statics/index.html.haml within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/max/projects/powerful_kids/app/views/statics/_about_us.html.haml:18: syntax error, unexpected tIDENTIFIER, expecting =>
+...order success", :width == 300px)).to_s);; _hamlout.buffer <<...
+...                               ^
+/home/max/projects/powerful_kids/app/views/statics/_about_us.html.haml:18: syntax error, unexpected ')', expecting keyword_end
+...ccess", :width == 300px)).to_s);; _hamlout.buffer << (">\n<s...
+...                               ^):
+  
+app/views/statics/_about_us.html.haml:18: syntax error, unexpected tIDENTIFIER, expecting =>
+app/views/statics/_about_us.html.haml:18: syntax error, unexpected ')', expecting keyword_end
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200603108320'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.2ms)
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:32:00 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (6.9ms)
+  Rendered statics/index.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 104ms (Views: 102.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:32:41 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (6.4ms)
+  Rendered statics/index.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 95ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:32:42 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (7.4ms)
+  Rendered statics/index.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 99ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:42:00 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (7.3ms)
+  Rendered statics/index.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 107ms (Views: 106.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:42:25 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (7.8ms)
+  Rendered statics/index.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 116ms (Views: 114.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:44:42 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (9.4ms)
+  Rendered statics/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 87ms (Views: 85.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:45:03 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (7.3ms)
+  Rendered statics/index.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 97ms (Views: 95.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:45:09 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (8.2ms)
+  Rendered statics/index.html.haml within layouts/application (11.3ms)
+Completed 200 OK in 103ms (Views: 101.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:45:33 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (8.3ms)
+  Rendered statics/index.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 114ms (Views: 112.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:45:35 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (8.3ms)
+  Rendered statics/index.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 102ms (Views: 100.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:46:05 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (6.0ms)
+  Rendered statics/index.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 86ms (Views: 84.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:46:23 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (8.2ms)
+  Rendered statics/index.html.haml within layouts/application (11.3ms)
+Completed 200 OK in 103ms (Views: 101.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_us" for 127.0.0.1 at 2018-01-10 13:46:32 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_us"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_us.html.haml (8.4ms)
+  Rendered statics/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 117ms (Views: 115.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 14:15:47 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (3.2ms)
+  Rendered statics/index.html.haml within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    13:   %div{:class => "card-profile-stats-more"}
+    14:     %p{:class => "card-profile-stats-more-link", %a{:href => "#", %i{:class => "fa fa-angle-down", :aria-hidden => "true"}}}
+    15:     <div class="card-profile-stats-more-content">
+    16:       <p>
+    17:         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem libero fugit, pariatur maxime! Optio enim, deserunt quia molestiae fugiat delectus, dolore et esse nostrum, quod autem necessitatibus fugit soluta repellendus.
+  
+app/views/statics/_about_coatch.html.haml:16
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200443116080'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.6ms)
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 14:17:05 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (6.3ms)
+  Rendered statics/index.html.haml within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/max/projects/powerful_kids/app/views/statics/_about_coatch.html.haml:14: unknown type of %string
+...d-profile-stats-more-link", %a{:href => "#", %i{:class => "f...
+...                               ^
+/home/max/projects/powerful_kids/app/views/statics/_about_coatch.html.haml:14: syntax error, unexpected end-of-input, expecting ')'
+...d-profile-stats-more-link", %a{:href => "#", %i{:class => "f...
+...                               ^):
+  
+app/views/statics/_about_coatch.html.haml:14: unknown type of %string
+app/views/statics/_about_coatch.html.haml:14: syntax error, unexpected end-of-input, expecting ')'
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200473650880'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.2ms)
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 14:18:48 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (7.1ms)
+  Rendered statics/index.html.haml within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/max/projects/powerful_kids/app/views/statics/_about_coatch.html.haml:14: unknown type of %string
+...d-profile-stats-more-link", %a{:href => "#"}, %i{:class => "...
+...                               ^
+/home/max/projects/powerful_kids/app/views/statics/_about_coatch.html.haml:14: syntax error, unexpected end-of-input, expecting ')'
+...d-profile-stats-more-link", %a{:href => "#"}, %i{:class => "...
+...                               ^):
+  
+app/views/statics/_about_coatch.html.haml:14: unknown type of %string
+app/views/statics/_about_coatch.html.haml:14: syntax error, unexpected end-of-input, expecting ')'
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200506273580'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.8ms)
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 14:19:09 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (7.2ms)
+  Rendered statics/index.html.haml within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/max/projects/powerful_kids/app/views/statics/_about_coatch.html.haml:14: unknown type of %string
+...d-profile-stats-more-link", %a{:href => "#", %i{:class => "f...
+...                               ^
+/home/max/projects/powerful_kids/app/views/statics/_about_coatch.html.haml:14: syntax error, unexpected end-of-input, expecting ')'
+...d-profile-stats-more-link", %a{:href => "#", %i{:class => "f...
+...                               ^):
+  
+app/views/statics/_about_coatch.html.haml:14: unknown type of %string
+app/views/statics/_about_coatch.html.haml:14: syntax error, unexpected end-of-input, expecting ')'
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200502337020'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.0ms)
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 14:20:34 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (8.5ms)
+  Rendered statics/index.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 125ms (Views: 124.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 14:21:02 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (8.5ms)
+  Rendered statics/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 111ms (Views: 109.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 14:21:03 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (8.3ms)
+  Rendered statics/index.html.haml within layouts/application (11.3ms)
+Completed 200 OK in 101ms (Views: 100.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 14:21:09 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (6.7ms)
+  Rendered statics/index.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 100ms (Views: 98.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 14:21:41 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (8.1ms)
+  Rendered statics/index.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 112ms (Views: 110.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 14:22:05 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (7.7ms)
+  Rendered statics/index.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 102ms (Views: 100.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 14:22:23 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (8.8ms)
+  Rendered statics/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 103ms (Views: 101.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 14:22:40 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (7.1ms)
+  Rendered statics/index.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 104ms (Views: 103.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 14:22:58 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (8.1ms)
+  Rendered statics/index.html.haml within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/max/projects/powerful_kids/app/views/statics/_about_coatch.html.haml:2: syntax error, unexpected ':', expecting ')'
+...utes({}, nil,:align => "left" :class => "card-profile-stats-...
+...                               ^
+/home/max/projects/powerful_kids/app/views/statics/_about_coatch.html.haml:2: syntax error, unexpected ')', expecting keyword_end
+...rd-profile-stats-intro")).to_s);; _hamlout.buffer << (">\n<i...
+...                               ^):
+  
+app/views/statics/_about_coatch.html.haml:2: syntax error, unexpected ':', expecting ')'
+app/views/statics/_about_coatch.html.haml:2: syntax error, unexpected ')', expecting keyword_end
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200507638280'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.9ms)
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 14:23:05 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (7.7ms)
+  Rendered statics/index.html.haml within layouts/application (11.0ms)
+Completed 200 OK in 97ms (Views: 95.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 14:23:28 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (7.8ms)
+  Rendered statics/index.html.haml within layouts/application (10.9ms)
+Completed 200 OK in 108ms (Views: 106.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 14:24:03 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (3.3ms)
+  Rendered statics/index.html.haml within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    48: 
+    49: •Победитель в Кубке Области по прыжкам на батуте -2013 г. Днепропетровск;
+    50: 
+    51:   %div{:class => "card-profile-stats-more"}
+    52:     %p{:class => "card-profile-stats-more-link"} 
+    53:       %a{:href => "#"}
+    54:         %i{:class => "fa fa-angle-down", :aria-hidden => "true"}
+  
+app/views/statics/_about_coatch.html.haml:51
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200460061700'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.9ms)
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 14:26:24 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (3.0ms)
+  Rendered statics/index.html.haml within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    10:   %div
+    11:     %ul В возрасте 4 лет начал заниматься спортом. Занимался прыжками на батуте и плаваньем. В 2014 году присвоено звание КМС по прыжкам на батуте
+    12:     Спортивные достижения: 
+    13:       %li Бронзовый призер первенства ДЮСШ КСК «Шинник» по прыжкам на батуте -2004 г. Днепропетровск;
+    14:       %li Серебряный призер в турнире ДЮСШ КСК «Шинник» по прыжкам на батуте -2004 г. Днепропетровск;
+    15:       %li Бронзовый призер в первенстве ДЮСШ КСК «Шинник» по прыжкам на батуте -2005 г. Днеперопетровск;
+    16:       %li Победитель первенства ДЮСШ КСК «Шинник» -2005 г. Днепропетровск;
+  
+app/views/statics/_about_coatch.html.haml:13
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200460089120'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.8ms)
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 14:26:49 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (3.3ms)
+  Rendered statics/index.html.haml within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %br and nested within it.):
+    10:   %div
+    11:     %ul В возрасте 4 лет начал заниматься спортом. Занимался прыжками на батуте и плаваньем. В 2014 году присвоено звание КМС по прыжкам на батуте 
+    12:     %br Спортивные достижения: 
+    13:       %li Бронзовый призер первенства ДЮСШ КСК «Шинник» по прыжкам на батуте -2004 г. Днепропетровск;
+    14:       %li Серебряный призер в турнире ДЮСШ КСК «Шинник» по прыжкам на батуте -2004 г. Днепропетровск;
+    15:       %li Бронзовый призер в первенстве ДЮСШ КСК «Шинник» по прыжкам на батуте -2005 г. Днеперопетровск;
+    16:       %li Победитель первенства ДЮСШ КСК «Шинник» -2005 г. Днепропетровск;
+  
+app/views/statics/_about_coatch.html.haml:13
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200463986400'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.1ms)
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 14:27:41 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (3.0ms)
+  Rendered statics/index.html.haml within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %br and nested within it.):
+    10:   %div
+    11:     %ul В возрасте 4 лет начал заниматься спортом. Занимался прыжками на батуте и плаваньем. В 2014 году присвоено звание КМС по прыжкам на батуте 
+    12:     %br Спортивные достижения: 
+    13:       %li Бронзовый призер первенства ДЮСШ КСК «Шинник» по прыжкам на батуте -2004 г. Днепропетровск;
+    14:       %li Серебряный призер в турнире ДЮСШ КСК «Шинник» по прыжкам на батуте -2004 г. Днепропетровск;
+    15:       %li Бронзовый призер в первенстве ДЮСШ КСК «Шинник» по прыжкам на батуте -2005 г. Днеперопетровск;
+    16:       %li Победитель первенства ДЮСШ КСК «Шинник» -2005 г. Днепропетровск;
+  
+app/views/statics/_about_coatch.html.haml:13
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200460120880'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.9ms)
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 14:28:01 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (2.2ms)
+  Rendered statics/index.html.haml within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %ul and nested within it.):
+     9: 
+    10:   %div
+    11:     %ul В возрасте 4 лет начал заниматься спортом. Занимался прыжками на батуте и плаваньем. В 2014 году присвоено звание КМС по прыжкам на батуте Спортивные достижения: 
+    12:       %li Бронзовый призер первенства ДЮСШ КСК «Шинник» по прыжкам на батуте -2004 г. Днепропетровск;
+    13:       %li Серебряный призер в турнире ДЮСШ КСК «Шинник» по прыжкам на батуте -2004 г. Днепропетровск;
+    14:       %li Бронзовый призер в первенстве ДЮСШ КСК «Шинник» по прыжкам на батуте -2005 г. Днеперопетровск;
+    15:       %li Победитель первенства ДЮСШ КСК «Шинник» -2005 г. Днепропетровск;
+  
+app/views/statics/_about_coatch.html.haml:12
+app/views/statics/index.html.haml:1:in `_app_views_statics_index_html_haml___4497149525225639816_70200463948560'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.3ms)
+Started GET "/statics?page=about_coatch" for 127.0.0.1 at 2018-01-10 15:01:19 +0200
+Processing by StaticsController#index as HTML
+  Parameters: {"page"=>"about_coatch"}
+  Rendering statics/index.html.haml within layouts/application
+  Rendered statics/_about_coatch.html.haml (10.1ms)
+  Rendered statics/index.html.haml within layouts/application (13.2ms)
+Completed 200 OK in 104ms (Views: 102.8ms | ActiveRecord: 0.0ms)
+
+
