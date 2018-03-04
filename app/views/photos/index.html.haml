@@ -1,0 +1,22 @@
+%h1 Listing photos
+= link_to 'New Photo', new_photo_path, style: "margin-bottom: 20px;"
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Body
+      %th
+      %th
+      %th
+
+  %tbody
+    - @photos.each do |photo|
+      %tr
+        %td
+          %img{src: photo.picture.thumb.url}
+        %td= photo.describtion
+        %td= link_to 'Show', photo
+        %td= link_to 'Edit', edit_photo_path(photo)
+        %td= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' }
+

@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>MyTest</title>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <title><%= content_for?(:title) ? yield(:title) : "Dnepr Power Kids" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
   </head>
 
   <body>
-    <%= render 'app/views/layouts/_header.html.erb' %>
-    <%= yield %>
-    <%= render 'app/views/layouts/_footer.html.erb' %>
-
+    <% if current_user %>
+      <%= 'Привет, ' + current_user.email %>
+      <%= link_to "Выйти", destroy_user_session_path, method: :delete%>
+    <% end %>  
+    <%= render "layouts/header" %>
+    <div class="content">
+      <%= yield %>
+    </div>
+    <%= render "layouts/footer" %>
 
   </body>
 </html>

@@ -1,0 +1,16 @@
+%section{:class => "contact-us-section"}
+  .row.medium-unstack
+    .columns.contact-us-section-left
+      %h1.contact-us-header
+        Наши контакты
+      .responsive-embed
+        ='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2647.443721640863!2d35.003075451366236!3d48.42882303870776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe35eb81bd8cf%3A0x988582f69db59fb2!2sAkademika+Yanhelya+St%2C+8%2C+Dnipropetrovs&#39;k%2C+Dnipropetrovsk+Oblast%2C+49000!5e0!3m2!1sen!2sua!4v1516927410926" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>'.html_safe
+      %ul.contact-us-list
+        %li.address Украина, Днепр, ул. Академика Янгеля, 8
+        %li{:class => "email"} 
+          %a{:href => "mailto:  "} powerfulkids18@gmail.com
+        %li{:class => "phone"}     +38 066 008 08 55; 
+        %li{:class => "phone"}     +38 098 589 94 97.
+    .columns.contact-us-section-right
+      %h1.contact-us-header Форма обратной связи 
+      = render 'contacts/form'

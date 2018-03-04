@@ -1,0 +1,8 @@
+%form{:class => "contact-us-form", :action => contacts_path, :method => 'POST'}
+  %input{:name => "contact[name]", :type => "text", :placeholder => "Имя"}
+  %input{:name => "contact[theme]", :type => "text", :placeholder => "Тема сообщения"}
+  %input{:name => "contact[email]", :type => "email", :placeholder => "Email"}
+  %textarea{:name => "contact[body]", :id => "", :rows => "12", :placeholder => "Ваше сообщение"}
+  = hidden_field_tag :authenticity_token, form_authenticity_token
+  %div{:class => "contact-us-form-actions"}
+    %input{:type => "submit", :class => "button", :value => "Send it"}

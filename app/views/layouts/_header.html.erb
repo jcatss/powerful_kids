@@ -1,21 +1,19 @@
-<nav class="top-bar topbar-responsive">
-  <div class="top-bar-title">
-    <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
-      <button class="menu-icon" type="button" data-toggle></button>
-    </span>
-    <a class="topbar-responsive-logo" href="#"><strong>Site Title</strong></a>
-  </div>
-  <div id="topbar-responsive" class="topbar-responsive-links">
-    <div class="top-bar-right">
-      <ul class="menu simple vertical medium-horizontal">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Works</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Contact</a></li>
-        <li>
-          <button type="button" class="button hollow topbar-responsive-button">Categories</button>
-        </li>
-      </ul>
-    </div>
+<header class="subnav-hero-section">
+  <h1 class="subnav-hero-headline">
+    <small>КЛУБ ФИЗИЧЕСКОГО РАЗВИТИЯ</small> "POWERFUL KIDS"
+    <img src="https://s3.amazonaws.com/www.dneprpowerkids.ua/imgonline-com-ua-Transparent-backgr-7upkeH3Gfvsk.jpg" height="65px" width="65px" float="right"></img>
+  </h1>
+  <ul class="menu menu-hover-lines">
+    <li><a class="active" href="<%= root_path(page: 'home') %>">Главная</a></li>
+    <li><a href="<%= root_path(page: 'about_us') %>">О нас</a></li>
+    <li><a href="<%= root_path(page: 'about_coatch') %>">Тренеры</a></li>
+    <li><a href="<%= root_path(page: 'rules') %>">Правила</a></li>
+    <li><a href="<%= root_path(page: 'shedule') %>">Расписание</a></li>
+    <li><a href="<%= root_path(page: 'gallery') %>">Галерея</a></li>
+    <% if user_signed_in? %>
+      <li><a href="<%= photos_path %>">Фотографии</a></li>
+      <li><a href="<%= videos_path %>">Видео</a></li>
+    <% end%>
+    <li><a href="<%= contacts_path %>">Контакты</a></li>
+  </ul>
+</header>

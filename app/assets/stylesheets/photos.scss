@@ -1,0 +1,25 @@
+// Place all the styles related to the photos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.cont
+{
+    text-align: center;
+}
+
+    .cont:before
+    {
+        content: '';
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+
+.tent{
+   
+    display: inline-block;
+    vertical-align: middle;
+   
+}
